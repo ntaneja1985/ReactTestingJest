@@ -1,0 +1,60 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+####################################
+# 1. Dependency directories
+####################################
+node_modules/       # recreated by npm/yarn – never commit [7]
+.pnp                # Yarn‐Plug’n’Play files [7]
+.pnp.js
+
+####################################
+# 2. Build & bundle outputs
+####################################
+build/              # create-react-app output [7][1]
+dist/               # Vite / Rollup / webpack-lib builds [1]
+
+####################################
+# 3. Test artefacts
+####################################
+coverage/           # Jest or RTL coverage reports [7]
+.cache/             # Jest / Babel / ESLint caches
+.nyc_output/        # Istanbul (nyc) coverage
+cypress/screenshots/
+cypress/videos/
+
+####################################
+# 4. Logs & diagnostics
+####################################
+npm-debug.log*      # npm logs [7]
+yarn-debug.log*     # yarn logs [7]
+yarn-error.log*     # yarn error logs [7]
+pnpm-debug.log*     # pnpm logs [1]
+
+####################################
+# 5. Environment-specific files
+####################################
+.env*               # local secrets & configs [7]
+!.env.example       # keep a template in VCS
+
+####################################
+# 6. Editor / OS clutter
+####################################
+.vscode/            # Visual Studio Code settings [1]
+.idea/              # JetBrains IDE settings [1]
+.DS_Store           # macOS finder metadata [7]
+Thumbs.db           # Windows thumbnails
+
+####################################
+# 7. Miscellaneous
+####################################
+*.tgz               # npm pack tarballs [1]
+parcel-cache/
+.eslintcache
+
